@@ -21,24 +21,24 @@ export class TasksController {
     return this.tasksService.findAll(paginationQuery);
   }
 
-  //   @Get(':id')
-  //   findOne(@Param('id') id: number) {
-  //     return this.tasksService.findOne('' + id);
-  //   }
+  @Get(':id')
+  findOne(@Param('id') id: number) {
+    return this.tasksService.findOne('' + id);
+  }
 
-  //   @Post()
-  //   create(@Body() createTaskDto: CreateTaskDto) {
-  //     // console.log(createTaskDto instanceof CreateTaskDto);
-  //     return this.tasksService.create(createTaskDto);
-  //   }
+  @Post()
+  create(@Body() createTaskDto: CreateTaskDto) {
+    // console.log(createTaskDto instanceof CreateTaskDto);
+    return this.tasksService.create(createTaskDto);
+  }
 
-  //   @Patch(':id')
-  //   update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
-  //     return this.tasksService.update(id, updateTaskDto);
-  //   }
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateTaskDto: UpdateTaskDto) {
+    return this.tasksService.update(id, updateTaskDto);
+  }
 
-  //   @Delete(':id')
-  //   remove(@Param('id') id: string) {
-  //     return this.tasksService.remove(id);
-  //   }
+  @Delete(':id')
+  remove(@Param('id') id: string) {
+    return this.tasksService.remove(id);
+  }
 }
