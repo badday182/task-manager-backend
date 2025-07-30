@@ -12,7 +12,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       port: 5432,
       username: 'postgres',
       password: 'pass123',
-      database: 'tasks_db',
+      database: 'postgres',
       // entities: [__dirname + '/**/*.entity{.ts,.js}'],
       autoLoadEntities: true,
       synchronize: true, // do not use in production, it can drop your database
